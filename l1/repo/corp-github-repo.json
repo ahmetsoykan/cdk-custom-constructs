@@ -1,0 +1,61 @@
+{
+    "typeName": "Corp::Github::Repo",
+    "description": "An example resource schema demonstrating some basic constructs and validation rules.",
+    "sourceUrl": "https://github.com/aws-cloudformation/aws-cloudformation-rpdk.git",
+    "definitions": {
+    },
+    "properties": {
+        "Name": {
+            "description": "A TPS Code is automatically generated on creation and assigned as the unique identifier.",
+            "type": "string"
+        },
+        "Owner": {
+            "description": "The title of the TPS report is a mandatory element.",
+            "type": "string"
+        },
+        "Description": {
+            "description": "Required for all TPS Reports submitted after 2/19/1999",
+            "type": "string"
+        },
+        "Oauthtoken": {
+            "type": "string"
+        },
+        "URL": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "Name",
+        "Oauthtoken",
+        "Owner"
+    ],
+    "readOnlyProperties": [
+        "/properties/URL"
+    ],
+    "primaryIdentifier": [
+        "/properties/URL"
+    ],
+    "handlers": {
+        "create": {
+            "permissions": [
+            ]
+        },
+        "read": {
+            "permissions": [
+            ]
+        },
+        "update": {
+            "permissions": [
+            ]
+        },
+        "delete": {
+            "permissions": [
+            ]
+        },
+        "list": {
+            "permissions": [
+            ]
+        }
+    }
+}

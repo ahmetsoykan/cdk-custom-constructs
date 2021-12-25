@@ -1,0 +1,8 @@
+Resources:
+  Repo:
+    Type: Corp::Github::Repo
+    Properties: 
+      Name: <your repo name>
+      Owner: ahmetsoykan
+      Oauthtoken: <API-KEY>
+      Description: demo demo

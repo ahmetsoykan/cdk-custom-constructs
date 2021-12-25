@@ -1,0 +1,40 @@
+{
+    "PropertyTypes": {
+    },
+    "ResourceTypes": {
+      "Corp::Github::Repo": {
+        "Attributes": {
+          "URL": {
+            "PrimitiveType": "String"
+          }
+        },
+        "Documentation": "",
+        "Properties": {
+          "Name": {
+            "Documentation": "",
+            "Required": true,
+            "PrimitiveType": "String",
+            "UpdateType": "Immutable"
+          },
+          "Owner": {
+            "Documentation": "",
+            "Required": true,
+            "PrimitiveType": "String",
+            "UpdateType": "Immutable"
+          },
+          "Description": {
+            "Documentation": "",
+            "Required": false,
+            "PrimitiveType": "String",
+            "UpdateType": "Immutable"
+          },
+          "Oauthtoken": {
+            "Documentation": "",
+            "Required": true,
+            "PrimitiveType": "String",
+            "UpdateType": "Immutable"
+          }
+        }
+      }
+    }
+  }
