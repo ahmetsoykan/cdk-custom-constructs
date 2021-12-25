@@ -9,29 +9,29 @@ import * as cdk from '@aws-cdk/core';
 import * as cfn_parse from '@aws-cdk/core/lib/cfn-parse';
 
 /**
- * Properties for defining a `Getir::Github::Repo`
+ * Properties for defining a `Corp::Github::Repo`
  *
  * @stability external
  */
 export interface CfnRepoProps {
 
     /**
-     * `Getir::Github::Repo.Name`
+     * `Corp::Github::Repo.Name`
      */
     readonly name: string;
 
     /**
-     * `Getir::Github::Repo.Oauthtoken`
+     * `Corp::Github::Repo.Oauthtoken`
      */
     readonly oauthtoken: string;
 
     /**
-     * `Getir::Github::Repo.Owner`
+     * `Corp::Github::Repo.Owner`
      */
     readonly owner: string;
 
     /**
-     * `Getir::Github::Repo.Description`
+     * `Corp::Github::Repo.Description`
      */
     readonly description?: string;
 }
@@ -60,11 +60,11 @@ function CfnRepoPropsValidator(properties: any): cdk.ValidationResult {
 }
 
 /**
- * Renders the AWS CloudFormation properties of an `Getir::Github::Repo` resource
+ * Renders the AWS CloudFormation properties of an `Corp::Github::Repo` resource
  *
  * @param properties - the TypeScript properties of a `CfnRepoProps`
  *
- * @returns the AWS CloudFormation properties of an `Getir::Github::Repo` resource.
+ * @returns the AWS CloudFormation properties of an `Corp::Github::Repo` resource.
  */
 // @ts-ignore TS6133
 function cfnRepoPropsToCloudFormation(properties: any): any {
@@ -91,16 +91,16 @@ function CfnRepoPropsFromCloudFormation(properties: any): cfn_parse.FromCloudFor
 }
 
 /**
- * A CloudFormation `Getir::Github::Repo`
+ * A CloudFormation `Corp::Github::Repo`
  *
- * @cloudformationResource Getir::Github::Repo
+ * @cloudformationResource Corp::Github::Repo
  * @stability external
  */
 export class CfnRepo extends cdk.CfnResource implements cdk.IInspectable {
     /**
      * The CloudFormation resource type name for this resource class.
      */
-    public static readonly CFN_RESOURCE_TYPE_NAME = "Getir::Github::Repo";
+    public static readonly CFN_RESOURCE_TYPE_NAME = "Corp::Github::Repo";
 
     /**
      * A factory method that creates a new instance of this class from an object
@@ -127,27 +127,27 @@ export class CfnRepo extends cdk.CfnResource implements cdk.IInspectable {
     public readonly attrUrl: string;
 
     /**
-     * `Getir::Github::Repo.Name`
+     * `Corp::Github::Repo.Name`
      */
     public name: string;
 
     /**
-     * `Getir::Github::Repo.Oauthtoken`
+     * `Corp::Github::Repo.Oauthtoken`
      */
     public oauthtoken: string;
 
     /**
-     * `Getir::Github::Repo.Owner`
+     * `Corp::Github::Repo.Owner`
      */
     public owner: string;
 
     /**
-     * `Getir::Github::Repo.Description`
+     * `Corp::Github::Repo.Description`
      */
     public description: string | undefined;
 
     /**
-     * Create a new `Getir::Github::Repo`.
+     * Create a new `Corp::Github::Repo`.
      *
      * @param scope - scope in which this resource is defined
      * @param id    - scoped id of the resource
